@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(image/background.png);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.card {
+  width: 90%;
+  max-width: 750px;
+  border-radius: 10px;
+  margin: 80px auto 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: "Roboto Slab", serif;
+}
+.card h1 {
+  font-size: 50px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.card h1::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  background: #0460ff;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  width: 100px;
+  height: 5px;
+}
+.quote,.author{
+    font-size: 25px;
+    padding: 10px;
+}
+.card .quote{
+    text-align: center;
+    margin-top: 30px;
+}
+.card .quote::before,.card .quote::after{
+    content: '';
+}
+.card .author span{
+    margin-top: 10px;
+    display: block;
+    float: right;
+    position: relative;
+}
+.card .author span::before{
+    content: "";
+    position: absolute;
+    background: #0460ff;
+    border-radius: 4px;
+    top: 50%;
+    left: -40px;
+    width:25px;
+    height: 3px;
+}
+.btn{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    width: 100%;
+}
+.btn button{
+    background-color: #0460ff;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #0460ff ;
+    cursor: pointer;
+    border-radius:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button:nth-child(2){
+    background: transparent;
+    color: black;
+}
+.btn img{
+    width: 40px;
+}
